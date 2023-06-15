@@ -27,6 +27,14 @@ npm start
 ```
 
 Now you'll need to pick a host to deploy it to.
+### Setup Database
+
+update .env DATABASE_URL="mysql://root:{password}@127.0.0.1:{port}/{dbname}"
+
+```sh
+npx prisma db push 
+```
+
 
 ### DIY
 
