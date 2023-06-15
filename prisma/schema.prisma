@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model campaigns {
+  id         Int    @id @default(autoincrement())
+  name       String @db.Text
+  title      String @db.Text
+  subtitle   String @db.Text
+  rating     String @db.Text
+  emailField String @db.Text
+  accent     String @db.Text
+  position   String @db.Text
+  buttonText String @db.Text
+  tyTitle    String @db.Text
+  tyMessage  String @db.Text
+  type       String @db.Text
+  privacy    String @db.Text
+  created    String @db.Text
+}
+
+model responses {
+  id         Int    @id @default(autoincrement())
+  campaignId String @db.Text
+  email      String @db.Text
+  message    String @db.LongText
+  rate       String @db.Text
+  ip         String @db.Text
+  created    String @db.Text
+}
+
+model users {
+  id         Int    @id @default(autoincrement())
+  first_name String @db.Text
+  last_name  String @db.Text
+  email      String @db.Text
+  password   String @db.Text
+  role       Int
+  owner      Int
+}

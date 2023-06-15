@@ -1,0 +1,15 @@
+interface campaignData {
+    name: 'Campaign Name',
+    title: 'Campaign Title',
+    subtitle: 'Campaign Subtitle',
+    rating: 'Campaign Rating',
+    emailField: 'Campaign Email Field',
+    accent: 'Campaign Accent',
+    position: 'Campaign Position',
+    buttonText: 'Campaign Button Text',
+    tyTitle: 'Thank You Title',
+    tyMessage: 'Thank You Message',
+    type: 'Campaign Type',
+    privacy: 'Campaign Privacy',
+    created: 'Campaign Created',
+  };
